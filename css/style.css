@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.conteiner {
+    margin: 0 auto;
+
+}
+.wrapper-carousel {
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 1000px;
+}
+.carousel-img {
+    height: 160px;
+    overflow: hidden;
+}
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+}
