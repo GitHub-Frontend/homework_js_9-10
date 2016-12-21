@@ -11,4 +11,8 @@ $(function(){
 
       });
 
+
+//TASK 2
+      $('.SlectBox').SumoSelect();
+
 });
