@@ -3,6 +3,7 @@
   padding: 0;
 }
 .conteiner {
+    width: 1000px;
     margin: 0 auto;
 
 }
@@ -20,8 +21,13 @@
     justify-content: space-between;
 }
 .wrapper-select {
+  display: flex;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-left: 300px;
-
+  margin-top: 50px;
+}
+.select-box {
+  margin: 0 20px;
+}
+.select-option {
+  padding: 10px 20px;
 }
