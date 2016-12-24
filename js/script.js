@@ -15,4 +15,8 @@ $(function(){
 //TASK 2
       $('.SlectBox').SumoSelect();
 
+//TASK 3
+      $('.check-box, select').styler();
+
+
 });
