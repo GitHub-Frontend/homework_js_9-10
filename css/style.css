@@ -6,10 +6,9 @@ a:visited {
   text-decoration: none;
 }
 .conteiner {
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-
 }
 .nav-menu {
     background-color: rgb(255,100,100);
@@ -38,8 +37,8 @@ a:visited {
     display: none;
     position: absolute;
     list-style: none;
-    left: 20;
-    top: 40px;
+    left: 20px;
+    top: 39px;
 }
 #menu li ul li {
     margin: 0;
@@ -47,6 +46,12 @@ a:visited {
     height: 42px;
     float: none;
     text-align: center;
+}
+#menu li >ul{
+  background: rgb(200,50,50);
+  z-index: 999;
+  display: none;
+  border: solid 1px #fff;
 }
 #menu li a {
     display: block;
@@ -59,15 +64,12 @@ a:visited {
     width: 145px;
     display: block;
     text-align: center;
+    border-bottom: solid 1px rgb(255,100,100);
+    color: #fff
 }
 #menu li a:hover  {
     color: #0d369e;
-    text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.4)
-}
-#menu li:hover >ul{
-    display: block;
-    background: rgb(200,50,50);
-    z-index: 999;
+    text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.4);
 }
 #menu li.dropdown > a {
     background-image: url(../img/arrow-drop-down.png);
@@ -81,29 +83,36 @@ a:visited {
     background-size: 6px;
     background-repeat: no-repeat;
 }
-#menu li ul a{
-  border-bottom: solid 1px rgb(255,100,100);
-  color: #fff
-}
-#menu li ul li ul {
-    left: 150px;
+#menu ul li > ul {
+    left: 147px;
     top: 0;
-    height: 210px;
+    height: 211.5px;
 }
-#menu li ul li ul li{
-    display: none;
+/*!---Animation-----*/
+#menu .sub-menu {
+    animation: color-change 2s;
 }
-#menu li ul li ul li ul li{
-    display: none;
+@keyframes color-change {
+    from {
+        background-color: rgb(255,100,100);
+    }
+    to {
+        background-color: rgb(200,50,50);
+    }
 }
-#menu li ul li:hover ul li{
-    display: block;
+@-webkit-keyframes color-change {
+    from {
+        background-color: rgb(255,100,100);
+    }
+    to {
+        background-color: rgb(200,50,50);
+    }
 }
 /*!----END MENU----->*/
+
 #title-head {
     margin-top: 20px;
     color: #fff;
-
 }
 #title-carousel {
     color: #fff;
@@ -114,7 +123,7 @@ a:visited {
 }
 .wrapper-carousel {
     margin: 30px auto;
-    width: 1000px;
+    width: 100%;
 }
 .carousel-img {
     height: 230px;
@@ -130,17 +139,17 @@ a:visited {
     border-top: 3px solid #fff;
 }
 .wrapper-select {
-  display: flex;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background: rgb(200,50,50);
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: rgb(255,100,100);
 
 }
 .select-box {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 .select-option {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
 .wrapper-checkbox {
     margin: 30px auto;
